@@ -41,6 +41,8 @@ module DB
             #@connection = Mongo::Connection.new(, @port, :pool_size => 5)
             @connection = Mongo::Client.new([ "#{@host}:#{@port}" ], :database => @dbname)
             @collection = @connection[@collname]
+            @collection.drop
+            @collection.indexes.create_one({ loc: "2dsphere" }, { min: -200, max: 200 })
         end
 
         #
