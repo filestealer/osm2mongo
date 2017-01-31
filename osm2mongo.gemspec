@@ -14,7 +14,7 @@ spec = Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.summary = 'OSM into MongoDB'
   s.test_files = Dir.glob('test/*.rb')
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.rubyforge_project = "osm2mongo" # what rubygems will call this gem
   s.license       = 'MIT'
 end
