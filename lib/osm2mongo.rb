@@ -149,7 +149,7 @@ class App
     end
     
     def output_usage
-        puts "Error parsing arguments"
+        STDERR.puts "Error parsing arguments"
     end
     
     def output_version

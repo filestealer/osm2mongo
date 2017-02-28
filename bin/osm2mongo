@@ -147,11 +147,11 @@ class App
       end
 
     end
-    
+
     def output_usage
-        puts "Error parsing arguments"
+        STDERR.puts "Error parsing arguments"
     end
-    
+
     def output_version
       puts "Osm2Mongo Utility version #{VERSION}"
     end
