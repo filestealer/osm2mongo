@@ -45,7 +45,7 @@ require_relative 'db/classifier'
 
 
 class App
-  VERSION = '0.0.2'
+  VERSION = '0.0.4'
   
   attr_reader :options
 
